@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Simple Survey Form</title>
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+
+                <h1 id="title"
+                class="text_center">Customer Satisfaction Service Survey</h1>
+
+            <p id="description"
+            class="description text_center">Please take a moment to fill out this survey</p>
+
+            </header>
+
+            <form id="survey_form" autocomplete="off">
+                <div class="form_group">
+                    <label for="name"
+                    id="name_label">Name</label>
+                    <input type="text"
+                    name="name"
+                    id="name"
+                    class="form_control"
+                    placeholder="Please enter your name" required>
+                </div>
+                
+                <div class="form_group">
+                    <label for="email"
+                    id="email_label">Email</label>
+                    <input type="text"
+                    name="email"
+                    id="email"
+                    class="form_control"
+                    placeholder="Please enter your email" required>
+                </div>
+
+                <div class="form_group">
+                    <label for="age"
+                    id="age_label">Age
+                    <span class="clue">(Optional)</span></label>
+                    <input type="number"
+                    name="age"
+                    id="number"
+                    min="18"
+                    max="99"
+                    class="form_control"
+                    placeholder="Age" required>
+                </div>
+
+                <div class="form_group">
+                    <label for="contact-number"
+                    id="contact-number_label">Contact Number</label>
+                    <input type="text"
+                    name="contact-number"
+                    id="contact-number"
+                    class="form_control"
+                    placeholder="Please enter your number" required>
+                </div>
+
+                <div class="form_group">
+                <p>For how long have you been using our product/service?</p>
+                    <select name="rate" id="dropdown" class="form_control">
+                        <option value="Select">Choose Options</option>
+                        <option value="5">Less than a month</option>
+                        <option value="4">1-12 months</option>
+                        <option value="3">1-3 years</option>
+                        <option value="2">Over 3 years</option>
+                        <option value="1">Haven't used it</option>
+                    </select>
+                </div>
+
+                <div class="form_group">
+                    <p>How satisfied are you with our product/service?</p>
+                    <label>
+                        <input type="radio"
+                        name="user-recommend"
+                        value="very_satisfied"
+                        class="input_radio"
+                        checked/>Very Satisfied
+                    </label>
+                    <label>
+                        <input type="radio"
+                        name="user-recommend"
+                        value="Satisfied"
+                        class="input_radio"
+                        checked/>Satisfied
+                    </label>
+                    <label>
+                        <input type="radio"
+                        name="user-recommend"
+                        value="neutral"
+                        class="input_radio"
+                        checked/>Neutral
+                    </label>
+                    <label>
+                        <input type="radio"
+                        name="user-recommend"
+                        value="unsatisfied"
+                        class="input_radio"
+                        checked/>Unsatisfied
+                    </label>
+                    <label>
+                        <input type="radio"
+                        name="user-recommend"
+                        value="very_unsatisfied"
+                        class="input_radio"
+                        checked/>Very Unsatisfied
+                    </label>
+                </div>
+
+                <div class="form_group">
+                    <p>What impressed you most about the product/service?</p>
+                    <select name="mostLike"
+                    id="most_like"
+                    class="form_control">
+                    <option value="options">Choose Options</option>
+                    <option value="quality">Quality</option>
+                    <option value="price">Price</option>
+                    <option value="experience">Shopping Experience</option>
+                    <option value="first_use">First Use Experience</option>
+                    <option value="usability">Usability</option>
+                    <option value="service">Customer Service</option>
+                    <option value="others">Others</option>
+                    </select>
+
+                    <p>What disappointed you most about the product/service?</p>
+                    <select name="mostDislike"
+                    id="most_dislike"
+                    class="form_control">
+                    <option value="options">Choose Options</option>
+                    <option value="quality">Quality</option>
+                    <option value="price">Price</option>
+                    <option value="experience">Shopping Experience</option>
+                    <option value="first_use">First Use Experience</option>
+                    <option value="usability">Usability</option>
+                    <option value="service">Customer Service</option>
+                    <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <div class="form_group">
+                    <p>What do you like most about our product/service?
+                    </p>
+                    <label>
+                        <input type="checkbox"
+                        name="prefer"
+                        value="apparel"
+                        class="input_radio"/>Apparel
+                    </label>
+                    <label>
+                        <input type="checkbox"
+                        name="prefer"
+                        value="footwear"
+                        class="input_radio"/>Footwear
+                    </label>
+                    <label>
+                        <input type="checkbox"
+                        name="prefer"
+                        value="traditional"
+                        class="input_radio"/>Traditional
+                    </label>
+                    <label>
+                        <input type="checkbox"
+                        name="prefer"
+                        value="formal_wear"
+                        class="input_radio"/>Formal Wear
+                    </label>
+                    <label>
+                        <input type="checkbox"
+                        name="prefer"
+                        value="accessories"
+                        class="input_radio"/>Accessories
+                    </label>
+                    <label>
+                        <input type="checkbox"
+                        name="prefer"
+                        value="watches_and_jewelry"
+                        class="input_radio"/>Watches and Jewelry
+                    </label>
+                    <label>
+                        <input type="checkbox"
+                        name="prefer"
+                        value="others"
+                        class="input_radio"/>Others
+                    </label>
+
+                </div>
+                <div class="form_group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea name="comment"
+                    class="input-textarea"
+                    id="comment"
+                    placeholder="Type your comment here..."
+                    ></textarea>
+                </div>
+                <div class="form_group">
+                    <button type="submit" class="submit_btn">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </body>
+</html>
